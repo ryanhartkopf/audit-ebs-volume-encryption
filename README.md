@@ -13,6 +13,9 @@ Usage of ./audit-ebs-volume-encryption:
         the AWS region
 ```
 
+## Credentials
+The SDK should automatically recognize AWS credentials in environment variables, the shared credentials file, and EC2 instance IAM role, in that order. See the [Developer Guide](https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/configuring-sdk.html#specifying-the-region) for more information on how to configure credentials.
+
 ## Example
 ```
 $ ./audit-ebs-volume-encryption -region=us-west-2
